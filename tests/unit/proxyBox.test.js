@@ -13,7 +13,7 @@ const { assert } = require("chai");
         transparentProxy = await ethers.getContract("Box_Proxy");
         boxV1 = await ethers.getContract("Box");
         boxV2 = await ethers.getContract("BoxV2");
-        adminProxy = await ethers.getContract("BoxAminProxy");
+        adminProxy = await ethers.getContract("BoxProxyAdmin");
         proxyBox = await ethers.getContractAt("Box", transparentProxy.address);
       });
 
